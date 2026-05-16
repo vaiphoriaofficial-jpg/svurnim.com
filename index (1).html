@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal — OmniV by SVURNIM</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+:root{--black:#060A14;--gold:#D4AF37;--gold-dim:#9A7D20;--white:#F5F0E8;--grey:#1A2035;--grey-light:#2A3150;--text:#C8C2B4}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--black);color:var(--text);font-family:'Space Mono',monospace;font-size:14px;line-height:1.8;min-height:100vh}
+.topbar{border-bottom:1px solid var(--gold-dim);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;background:var(--black)}
+.topbar-logo{font-family:'Chakra Petch', sans-serif;font-size:22px;letter-spacing:4px;color:var(--gold);text-decoration:none}
+.topbar-sub{font-size:11px;letter-spacing:2px;color:var(--gold-dim);text-transform:uppercase}
+.hero{padding:72px 48px 48px;border-bottom:1px solid var(--grey-light);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border:1px solid var(--gold-dim);border-radius:50%;opacity:.08}
+.doc-label{font-size:11px;letter-spacing:4px;color:var(--gold-dim);text-transform:uppercase;margin-bottom:16px}
+.doc-title{font-family:'Chakra Petch', sans-serif;font-size:clamp(42px,8vw,80px);letter-spacing:6px;color:var(--white);line-height:1;margin-bottom:24px}
+.doc-title span{color:var(--gold)}
+.doc-meta{font-size:12px;color:var(--gold-dim);letter-spacing:1px}
+.content{max-width:900px;margin:0 auto;padding:64px 48px 96px}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;margin:0}
+.doc-card{background:var(--grey);padding:40px;text-decoration:none;border:none;display:block;transition:background .2s;position:relative;overflow:hidden}
+.doc-card::after{content:'→';font-family:'Space Mono',monospace;color:var(--gold);position:absolute;bottom:24px;right:32px;font-size:18px;transition:transform .2s}
+.doc-card:hover{background:var(--grey-light)}
+.doc-card:hover::after{transform:translateX(4px)}
+.card-num{font-size:10px;letter-spacing:4px;color:var(--gold-dim);margin-bottom:12px;display:block}
+.card-title{font-family:'Chakra Petch', sans-serif;font-size:24px;letter-spacing:3px;color:var(--white);margin-bottom:10px;display:block}
+.card-desc{font-size:12px;color:var(--text);line-height:1.6}
+footer{border-top:1px solid var(--grey-light);padding:40px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-brand{font-family:'Chakra Petch', sans-serif;font-size:18px;letter-spacing:4px;color:var(--gold)}
+.footer-copy{font-size:11px;color:var(--gold-dim);letter-spacing:1px}
+a{color:var(--gold);text-decoration:none}
+@media(max-width:600px){.topbar{padding:16px 24px}.hero{padding:48px 24px 36px}.content{padding:48px 24px 72px}footer{padding:32px 24px;flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <a href="index.html" class="topbar-logo">SVURNIM</a>
+  <span class="topbar-sub">Legal Documents</span>
+</nav>
+
+<header class="hero">
+  <p class="doc-label">OmniV — Legal &amp; Policies</p>
+  <h1 class="doc-title">LEGAL <span>DOCS</span></h1>
+  <p class="doc-meta">Effective Date: May 16, 2026 &nbsp;·&nbsp; Contact: hello@svurnim.com</p>
+</header>
+
+<main class="content">
+  <div class="index-grid">
+    <a href="privacy.html" class="doc-card">
+      <span class="card-num">01 — PRIVACY</span>
+      <span class="card-title">PRIVACY POLICY</span>
+      <p class="card-desc">What data we collect, why we collect it, and how we protect it.</p>
+    </a>
+    <a href="terms.html" class="doc-card">
+      <span class="card-num">02 — TERMS</span>
+      <span class="card-title">TERMS &amp; CONDITIONS</span>
+      <p class="card-desc">Your agreement with SVURNIM when using OmniV.</p>
+    </a>
+    <a href="refund.html" class="doc-card">
+      <span class="card-num">03 — REFUND</span>
+      <span class="card-title">REFUND POLICY</span>
+      <p class="card-desc">Cancellation rules and when refunds apply.</p>
+    </a>
+    <a href="deletion.html" class="doc-card">
+      <span class="card-num">04 — DELETION</span>
+      <span class="card-title">DATA DELETION</span>
+      <p class="card-desc">How to request deletion of your personal data.</p>
+    </a>
+    <a href="disclaimer.html" class="doc-card">
+      <span class="card-num">05 — AI</span>
+      <span class="card-title">AI DISCLAIMER</span>
+      <p class="card-desc">What our AI reports are, and what they are not.</p>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <span class="footer-brand">SVURNIM</span>
+  <span class="footer-copy">© 2026 SVURNIM / Vaibhavi Gupta. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
